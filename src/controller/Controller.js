@@ -46,21 +46,8 @@ export const getDeletar = async (req, res) => {
 }
 
 export const getCriar = (req, res) => {
-    res.render('criar.ejs')
+    res.render('criar.ejs', {toggle: false})
 }
-
-// minha versao
-// export const postCriar = async (req, res) => {
-//     const { nome, diretor, img, duracao, ano, iframe } = req.body
-//     try{
-//         // await connection.query(`INSERT INTO artes (nome, diretor, img, duracao, ano, iframe) VALUES(${req.body})`)
-//         await artes.create()
-//     }
-//     catch(error) {
-//         res.send(error.message)
-
-//     }
-// }
 
 export const postCriar = async (req, res) => {
     const {
@@ -83,7 +70,7 @@ export const postCriar = async (req, res) => {
                 ano,
                 iframe
             })
-            res.render('criar.ejs')
+            res.render('criar.ejs', {toggle: true})
         }
     } catch (error) {
         res.send(error.message)

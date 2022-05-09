@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,32 +16,32 @@
             <form method="post" action="">
                 <legend>Criar Filme</legend>
                 <fieldset class="fieldset__data">
-                    <input type="text" name="nome">
+                    <input type="text" name="nome" required>
                     <label for="nome">Nome Filme</label>
                 </fieldset>
 
                 <fieldset class="fieldset__data">
-                    <input type="text" name="diretor">
+                    <input type="text" name="diretor" required>
                     <label for="diretor">Nome Diretor</label>
                 </fieldset>
 
                 <fieldset class="fieldset__data">
-                    <input type="url" name="img">
+                    <input type="url" name="img" required>
                     <label for="img">Imagem</label>
                 </fieldset>
 
                 <fieldset class="fieldset__data">
-                    <input type="number" name="duracao">
+                    <input type="number" name="duracao" required>
                     <label for="duracao">Duracão</label>
                 </fieldset>
 
                 <fieldset class="fieldset__data">
-                    <input type="text" name="ano">
+                    <input type="text" name="ano" required>
                     <label for="ano">Ano de lançamento</label>
                 </fieldset>
 
                 <fieldset class="fieldset__data">
-                    <input type="text" name="iframe">
+                    <input type="text" name="iframe" required>
                     <label for="iframe">Iframe</label>
                 </fieldset>
 
@@ -49,6 +50,17 @@
         </section>
     </main>
     <%- include('./partials/footer.ejs') %>
+    <% if (toggle) { %>
+        <script>
+            Swal.fire({
+            icon: 'success',
+            title: 'Sucesso!!!',
+            text: 'Seu filme foi cadastrado!',
+            timer: 5000
+              })
+              setInterval(() => {window.location.href = "/"}, 5000)
+            </script>
+    <% } %>
 
 </body>
 </html>

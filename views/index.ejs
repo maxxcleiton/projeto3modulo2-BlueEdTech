@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/style.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Index</title>
 </head>
 <body>
@@ -30,7 +31,16 @@
             <% }) %>
         </section>
     </main>
-    <button></button>
-    <%- include('./partials/footer.ejs') %>
+    <!-- <button></button> -->
+<!-- <%#- include('./partials/footer.ejs') %>
+    <%# if (toggle) { %>
+        <script>
+            Swal.fire({
+            icon: 'success',
+            title: 'Sucesso!!!',
+            text: 'Seu filme foi cadastrado!',
+                })
+            </script>
+    <%# } %> -->
 </body>
 </html>
