@@ -8,7 +8,10 @@ Nele que passamos a utilizar um banco de dados utilizando o pgAdmin - PostgreSQL
 
 ## Do quê se trata esse Projeto?
 Consiste na criação de um catálogo (com tema livre), onde será possível no futuro realizar as 4 operações do CRUD.
-CRUD: Create / Read / Update / Delete. Em português: Criar / Ler / Editar / Deletar.
+<br>
+CRUD: Create / Read / Update / Delete.
+<br>
+Em português: Criar / Ler / Editar / Deletar.
 
 ## Contatos
 <a href="https://www.linkedin.com/in/maxcleiton/" target="blank" rel="noopener">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)<a>
