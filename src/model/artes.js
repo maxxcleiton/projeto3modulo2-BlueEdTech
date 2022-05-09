@@ -38,3 +38,14 @@ export const artes = connection.define('artes', {
      updateAt: false,
      timestamps: false
 })
+
+const initTable = async () => {
+    try {
+        await artes.sync()
+    }
+    catch (error) {
+        return error.message
+    }
+}
+
+initTable()
