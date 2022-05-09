@@ -11,7 +11,7 @@
 <body>
     <%- include('./partials/header.ejs') %>
     <main>
-        <div id="sub__header"></div>
+        <div id="sub__header">SétimaArte, aqui encontra-se apenas as melhores obras do cinema!</div>
         <section id="card__container">
             <% listArtes.forEach(element => { %>
                 <a href="/detalhes/<%= element.id %>">
@@ -31,16 +31,6 @@
             <% }) %>
         </section>
     </main>
-    <!-- <button></button> -->
-<!-- <%#- include('./partials/footer.ejs') %>
-    <%# if (toggle) { %>
-        <script>
-            Swal.fire({
-            icon: 'success',
-            title: 'Sucesso!!!',
-            text: 'Seu filme foi cadastrado!',
-                })
-            </script>
-    <%# } %> -->
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>
