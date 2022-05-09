@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Editar</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <section id="form_container">
+            <form method="post" action="/editar/<%= arteAtual.id %>">
+                <legend>Editando o <%= arteAtual.nome %></legend>
+                <fieldset class="fieldset__data">
+                    <input type="text" name="nome" required value="<%= arteAtual.nome %> ">
+                    <label for="nome">Nome Filme</label>
+                </fieldset>
+
+                <fieldset class="fieldset__data" required value="<%= arteAtual.diretor %> ">
+                    <input type="text" name="diretor">
+                    <label for="diretor">Nome Diretor</label>
+                </fieldset>
+
+                <fieldset class="fieldset__data">
+                    <input type="url" name="img" required value="<%= arteAtual.img %>">
+                    <label for="img">Imagem</label>
+                </fieldset>
+
+                <fieldset class="fieldset__data">
+                    <input type="number" name="duracao" required value="<%= arteAtual.duracao %> ">
+                    <label for="duracao">Duracão</label>
+                </fieldset>
+
+                <fieldset class="fieldset__data">
+                    <input type="text" name="ano" required value="<%= arteAtual.ano %> ">
+                    <label for="ano">Ano de lançamento</label>
+                </fieldset>
+
+                <fieldset class="fieldset__data" required value="<%= arteAtual.iframe %> ">
+                    <input type="text" name="iframe">
+                    <label for="iframe">Iframe</label>
+                </fieldset>
+
+                <button id="btn__submit" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>
