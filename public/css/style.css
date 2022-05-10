@@ -23,14 +23,16 @@ body {
 
 main {
     min-height: 80%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 main div#sub__header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     background-color: #94D2BD;
 }
 
@@ -44,6 +46,8 @@ header {
 header nav ul {
     display: flex;
     gap: 1em;
+    position: relative;
+
     list-style: none;
 }
 
@@ -63,7 +67,7 @@ header::before {
     position: absolute;
     left: 15px;
     top: 25px;
-    content: "SétimaArte";
+    content: "A SétimaArte.";
     z-index: 1;
     color: white;
 }
@@ -71,11 +75,17 @@ header::before {
 header nav {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+    z-index: 2;
 }
 
+
 footer {
+    /* display: flex;
+    justify-content: center; */
+    padding-top: 2em;
+    align-items: center;
     text-align: center;
     height: 10%;
     background-color: #CA6702;
@@ -104,13 +114,14 @@ section#details__container {
 section article.cards {
     height: 200px;
     width: 150px;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 article.cards div.card__img {
     display: flex;
     justify-content: center;
-    height: 80%;
+    height: 110%;
+    margin-top: 2em;
     /* border: 1px solid greenyellow; */
 }
 
@@ -129,7 +140,7 @@ table {
     text-align: center;
 }
 
-table tr:nth-child(odd) {
+table tr:nth-child(0) {
     background-color: #0A9396;
 }
 /* #94D2BD / #0A9396 */
@@ -165,6 +176,8 @@ form fieldset {
 }
 
 legend {
+    color: white;
+    width: auto;
     background-color: #0A9396;
 }
 
@@ -178,9 +191,24 @@ form div#btn__container {
 }
 
 form button#btn__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0A9396;
     color: white;
     border: none;
     height: 7vh;
-    width: 24vw;
+    width: 35vw;
+}
+
+.aiframe {
+    width: 90%;
+}
+
+tbody {
+    width: 90%;
+}
+
+.ul__menu {
+    padding-right: 1em;
 }
