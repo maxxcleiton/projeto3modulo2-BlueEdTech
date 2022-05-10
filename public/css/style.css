@@ -111,7 +111,7 @@ article.cards div.card__img {
     display: flex;
     justify-content: center;
     height: 80%;
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
 }
 
 article.cards div.card__img img {

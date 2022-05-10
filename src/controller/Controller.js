@@ -3,10 +3,6 @@ import {artes} from '../model/artes.js'
 
 export const getIndex = async (req, res) => {
     try {
-        // const listArtes = await connection.query('SELECT * FROM artes', {
-        //     model: artes
-        // })
-
         const listArtes = await artes.findAll()
         console.log(listArtes)
         res.render('index.ejs',{ 
@@ -19,7 +15,6 @@ export const getIndex = async (req, res) => {
 
 export const getDetalhes = async (req,res) => {
     try {
-        // const filmesDetalhes =  await connection.query(`SELECT * FROM artes WHERE id = ${req.params.id}`)
         const artesDetalhes = await artes.findByPk(req.params.id)
         res.render('detalhes.ejs',{
             artesDetalhes
@@ -32,7 +27,6 @@ export const getDetalhes = async (req,res) => {
 
 export const getDeletar = async (req, res) => {
     try {
-    //    await connection.query(`DELETE FROM artes WHERE id = ${req.params.id}`)
         await artes.destroy({
             where: {
                 id: req.params.id
