@@ -202,7 +202,7 @@ form button#btn__submit {
 }
 
 .aiframe {
-    width: 90%;
+    /* min-width: 90%; */
 }
 
 tbody {
