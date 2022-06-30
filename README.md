@@ -1,5 +1,5 @@
 # Projeto Catálogo - Módulo 2 - Projeto 3 - Projeto Final
-
+<img src="./src/gifs/mod2proj3.gif" />
 ## Descrição:
 Fiz o projeto durante o curso de Desenvolvimento Web na Blue EdTech, tendo sempre como objetivo o aprendizado e a prática.
 Nele que passamos a utilizar um banco de dados utilizando o pgAdmin - PostgreSQL
